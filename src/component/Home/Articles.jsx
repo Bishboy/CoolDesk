@@ -13,7 +13,7 @@ const Articles = () => {
             </div>
             <CategoryCard />
 
-            <div className="py-16  max-w-[1400px]  md:py-20 bg-[#5236CB] text-white  rounded-lg mx-auto  px-4 my-12 md:my-20 shadow-lg">
+            <div className="py-16  max-w-[1400px]  md:py-20 bg-[#5236CB] text-white  rounded-3xl mx-auto  px-4 my-12 md:my-20 shadow-lg">
                 <div className=" flex flex-col items-center  text-center">
                     <h2 className="text-3xl md:text-5xl font-bold mb-6 max">
                         Transform Your Business with DevDesk
@@ -29,7 +29,7 @@ const Articles = () => {
                             Free Trial
                         </button>
                         <button
-                            className="bg-indigo-600 hover:bg-indigo-500 text-white font-semibold py-3 px-8 rounded-full text-lg transition-colors duration-200 shadow-md"
+                            className="bg-gray-600 hover:bg-gray-700 text-white font-semibold py-3 px-8 rounded-full text-lg transition-colors duration-200 shadow-md"
                         >
                             Request Demo
                         </button>

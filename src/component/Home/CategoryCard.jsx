@@ -29,7 +29,7 @@ const CategoryCard = () => {
                                         <h3 className="text-xl font-semibold group-hover:text-indigo-600 text-gray-800 mb-2">
                                             {category.title}
                                         </h3>
-                                        <p className="text-gray-600 text-sm mb-4">{category.description}</p>
+                                        <p className="text-gray-600 text-sm mb-4 px-4">{category.description}</p>
                                     </CardContent>
 
                                     <CardFooter className="p-0 mt-auto flex items-center justify-center">

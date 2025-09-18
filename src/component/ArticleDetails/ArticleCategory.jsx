@@ -68,7 +68,7 @@ const ArticleCategory = () => {
             <Link
               to={category.url}
               onClick={() => setActiveCategory(category.id)}
-              className="text-left w-full"
+              className="text-left w-full hover:text-blue-600 transition-colors duration-200"
             >
               {category.name}
             </Link>

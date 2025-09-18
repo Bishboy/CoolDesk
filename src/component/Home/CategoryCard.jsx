@@ -1,6 +1,8 @@
 import React from 'react'
 import { categories } from '@/data';
 import { Card, CardContent, CardFooter } from '@/components/ui/card';
+import { Link } from 'react-router';
+import { CATEGORY_URL } from '@/routes/constant/urlConstant';
 
 
 
@@ -23,7 +25,7 @@ const CategoryCard = () => {
                                     <category.icon className="h-10 w-10 text-indigo-600" />
                                 </div>
 
-
+                                <Link to={CATEGORY_URL}>
                                 <CardContent className="p-0 flex-grow">
                                     <h3 className="text-xl font-semibold text-gray-800 mb-2">
                                         {category.title}
@@ -36,6 +38,7 @@ const CategoryCard = () => {
                                         <span>{category.articles} articles</span>
                                     </div>
                                 </CardFooter>
+                            </Link>
                             </Card>
                         ))}
                     </div>

@@ -10,7 +10,116 @@ import {
   LifeBuoy,
   Lightbulb,
   BookOpen,
+  CircleChevronLeft,
+   
 } from "lucide-react";
+import {
+  POPULAR_ARTICLES_URL,
+  CATEGORY_URL,
+} from "./routes/constant/urlConstant";
+
+ 
+export const gettingStartedArticles = [
+  {
+    id: "gs1",
+    title: "Creating Your Account: A Step-by-Step Guide",
+    link: POPULAR_ARTICLES_URL,
+  },
+  {
+    id: "gs2",
+    title: "Onboarding 101: Getting Started with Lorem Ipsum",
+    link: POPULAR_ARTICLES_URL,
+  },
+  {
+    id: "gs3",
+    title: "Setting Up Your Workspace: A Quick Start Guide",
+    link: POPULAR_ARTICLES_URL,
+  },
+  {
+    id: "gs4",
+    title: "Navigating Lorem Ipsum: A Beginner's Tutorial",
+    link: POPULAR_ARTICLES_URL,
+  },
+  {
+    id: "gs5",
+    title: "Your First Steps with Lorem Ipsum: From Sign-up to Success",
+    link: POPULAR_ARTICLES_URL,
+  },
+  {
+    id: "gs6",
+    title: "Welcome to Lorem Ipsum: A Beginner's Guide",
+    link: POPULAR_ARTICLES_URL,
+  },
+  {
+    id: "gs7",
+    title: "Onboarding Guide: A step-by-step walkthrough for new users",
+    link: POPULAR_ARTICLES_URL,
+  },
+  {
+    id: "gs8",
+    title: "Account Settings: Manage your profile and preferences",
+    link: POPULAR_ARTICLES_URL,
+  },
+];
+export const relatedArticles = [
+  {
+    id: '1',
+    title: 'Onboarding 101: Getting Started with Lorem Ipsum',
+    excerpt: 'Excerpt goes here Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+    link: '/articles/onboarding-101'
+  },
+  {
+    id: '2',
+    title: 'Setting Up Your Workspace: A Quick Start Guide',
+    excerpt: 'Quisque eu placerat purus. Nulla id lorem ac odio tincidunt laoreet non iaculis elit...',
+    link: '/articles/setting-up-workspace'
+  },
+  {
+    id: '3',
+    title: 'Navigating Lorem Ipsum: A Beginner\'s Tutorial',
+    excerpt: 'Morbi tellus velit, commodo sed vestibulum vel, ornare sed leo. Quisque imperdiet...',
+    link: '/articles/navigating-lorem-ipsum'
+  },
+  {
+    id: '4',
+    title: 'Account Settings: Manage your profile and preferences',
+    excerpt: 'Aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit...',
+    link: '/articles/account-settings'
+  },
+];
+
+export const steps = [
+  {
+    numb: 1,
+    title: "Create Your Account:",
+    description:
+      "Cras eget felis quis velit convallis fringilla sed sit amet nisi. Maecenas ullamcorper ex elit, a elementum nisl congue molestie.",
+  },
+  {
+    numb: 2,
+    title: "Explore the Dashboard:",
+    description:
+      "Duis vestibulum metus nec leo euismod, sed suscipit massa placerat.",
+  },
+  {
+    numb: 3,
+    title: "Set Up Your Profile:",
+    description:
+      "Morbi tincidunt dignissim nisi non scelerisque. Vivamus id ligula mauris. In id nisi sapien.",
+  },
+  {
+    numb: 4 ,
+    title: "Invite Team Members:",
+    description:
+      "Vestibulum a elementum nulla, id interdum sem. Donec quis erat et justo sollicitudin cursus sed a ligula. Vivamus a dui ut nisi finibus feugiat in ultricies erat.",
+  },    
+  {
+    numb: 5,
+    title: "Create Your First Project:",
+    description:
+      "Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam vel justo arcu. Aliquam laoreet mi sit amet augue porta, ac euismod massa ultrices. Curabitur ex dui, dignissim fringilla finibus eu, sagittis vel nibh.",
+  },
+];
 
 export const articles = [
   {

@@ -9,6 +9,7 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu"
+import { CATEGORY_URL } from "@/routes/constant/urlConstant";
 
 const Header = () => {
     const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
@@ -55,8 +56,12 @@ const Header = () => {
                                                 Categories {isDropdownOpen ? <ChevronDownIcon className="w-4 h-4" /> : <ChevronUpIcon className="w-4 h-4" />}
                                             </DropdownMenuTrigger>
                                             <DropdownMenuContent className="m-4 w-[300px] py-3">
-                                                <DropdownMenuItem className="mb-2">Get Started</DropdownMenuItem>
-                                                <DropdownMenuItem className="mb-2">Product Guide</DropdownMenuItem>
+                                                <DropdownMenuItem className="mb-2"> <Link to={CATEGORY_URL}>Get Started
+                                                </Link></DropdownMenuItem>
+                                                <DropdownMenuItem className="mb-2">
+                                                    <Link to={CATEGORY_URL}> Product Guide
+                                                    </Link> 
+                                                   </DropdownMenuItem>
                                                 <DropdownMenuItem className="mb-2">Integrations</DropdownMenuItem>
                                                 <DropdownMenuItem className="mb-2">Collaboration</DropdownMenuItem>
                                                 <DropdownMenuItem className="mb-2">Billing & Subscription</DropdownMenuItem>
@@ -93,9 +98,14 @@ const Header = () => {
                                             <DropdownMenuTrigger className="flex gap-1 items-center text-white font-semibold text-lg w-full text-left">
                                                 Categories {isDropdownOpen ? <ChevronDownIcon className="w-4 h-4" /> : <ChevronUpIcon className="w-4 h-4" />}
                                             </DropdownMenuTrigger>
-                                            <DropdownMenuContent className=" w-[600px] py-3">
-                                                <DropdownMenuItem className="mb-2">Get Started</DropdownMenuItem>
-                                                <DropdownMenuItem className="mb-2">Product Guide</DropdownMenuItem>
+                                            <DropdownMenuContent className="w-[350px] sm:w-[400px] md:w-[600px] py-3">
+                                                <DropdownMenuItem className="mb-2"> <Link to={CATEGORY_URL}>Get Started
+                                                </Link> 
+                                                </DropdownMenuItem>
+                                                <DropdownMenuItem className="mb-2">
+                                                    <Link to={CATEGORY_URL}> Product Guide
+                                                    </Link>
+                                                    </DropdownMenuItem>
                                                 <DropdownMenuItem className="mb-2">Integrations</DropdownMenuItem>
                                                 <DropdownMenuItem className="mb-2">Collaboration</DropdownMenuItem>
                                                 <DropdownMenuItem className="mb-2">Billing & Subscription</DropdownMenuItem>

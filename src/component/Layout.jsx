@@ -6,8 +6,8 @@ import Header from './Header'
 
 const Layout = ({ children }) => {
   return (
-    <div className='min-h-screen'>
-      <main >
+    <div className=''>
+      <main className='min-h-screen' >
         <Outlet />
       </main>
       <Footer />

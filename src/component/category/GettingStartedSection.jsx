@@ -2,6 +2,7 @@
 import React from 'react';
 import { FileText } from 'lucide-react';
 import { gettingStartedArticles } from '@/data';
+import { Link } from 'react-router';
 
 const GettingStartedSection = () => {
     return (
@@ -18,16 +19,15 @@ const GettingStartedSection = () => {
             {/* List of Articles */}
             <div className="space-y-4">
                 {gettingStartedArticles.map((article) => (
-                    <a
+                    <Link to={article.link}
                         key={article.id}
-                        href={article.link} // Use href for actual navigation, or onClick with React Router
                         className="flex items-center space-x-3 p-3 -mx-3 rounded-lg hover:bg-gray-50 transition-colors duration-200 group"
                     >
                         <FileText size={20} className="text-gray-500 flex-shrink-0 group-hover:text-blue-600" />
                         <span className="text-gray-800 font-medium group-hover:text-blue-700 transition-colors duration-200">
                             {article.title}
                         </span>
-                    </a>
+                    </Link>
                 ))}
             </div>
         </div>

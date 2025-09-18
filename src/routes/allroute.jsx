@@ -4,6 +4,7 @@ import Home from "./Home";
 import {  CATEGORY_URL, HOME_URL, POPULAR_ARTICLES_URL } from "./constant/urlConstant";
 import PopularDatailsPage from "./PopularDatailsPage";
 import CategoryDetails from "./CategoryDetails";
+import "../App.css"
 
 const router = createBrowserRouter([
     {

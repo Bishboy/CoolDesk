@@ -18,7 +18,7 @@ const CategoryCard = () => {
                         {categories.map((category, index) => (
                             <Card
                                 key={index}
-                                className="bg-white border border-gray-200 rounded-xl p-6 flex flex-col items-center text-center shadow-xl hover:shadow-2xl transition-all duration-200"
+                                className="bg-white border border-gray-200 rounded-xl p-6 flex flex-col items-center text-center shadow-xl hover:shadow-2xl transition-all duration-200 group"
                             >
 
                                 <div className="mb-4 border p-4 bg-gray-100 rounded-md">
@@ -27,7 +27,7 @@ const CategoryCard = () => {
 
                                 <Link to={CATEGORY_URL}>
                                 <CardContent className="p-0 flex-grow">
-                                    <h3 className="text-xl font-semibold text-gray-800 mb-2">
+                                    <h3 className="text-xl font-semibold group-hover:text-indigo-600 text-gray-800 mb-2">
                                         {category.title}
                                     </h3>
                                     <p className="text-gray-600 text-sm mb-4">{category.description}</p>

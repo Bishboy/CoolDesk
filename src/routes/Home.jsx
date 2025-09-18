@@ -5,9 +5,11 @@ import Articles from '@/component/Home/Articles'
 const Home = () => {
   return (
     <div className="relative bg-[#5236CB]  text-white ">
+      <div className=''>
       <Header />
       <HeroSection />
       <Articles />
+      </div>
     </div>
   )
 }

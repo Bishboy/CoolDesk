@@ -1,22 +1,22 @@
 import {
   FileText,
   ThumbsUp,
-  Rocket,
-  Monitor,
-  Wrench,
-  Users,
-  DollarSign,
-  Code,
-  LifeBuoy,
-  Lightbulb,
-  BookOpen,
-  CircleChevronLeft,
+CircleChevronLeft,
    
 } from "lucide-react";
 import {
   POPULAR_ARTICLES_URL,
   CATEGORY_URL,
 } from "./routes/constant/urlConstant";
+import Code from "../src/assets/images/help/code-icon-alt.svg"
+import Wrench from "../src/assets/images/help/cog-icon-alt.svg"
+import DollarSign from "../src/assets/images/help/dollar-icon-alt.svg"
+import LifeBuoy from "../src/assets/images/help/help-icon-alt.svg"
+import Monitor from "../src/assets/images/help/monitor-icon-alt.svg"
+import Lightbulb from "../src/assets/images/help/okay-hand-icon-alt.svg"
+import Rocket from "../src/assets/images/help/rocket-icon-alt.svg"
+import BookOpen from "../src/assets/images/help/resource-icon-alt.svg"
+import Users from "../src/assets/images/help/users-icon-alt.svg"
 
  
 export const gettingStartedArticles = [

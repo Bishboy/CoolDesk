@@ -5,7 +5,7 @@ import PopularCard from './PopularCard';
 const Articles = () => {
     return (
         <section className="py-12 md:py-20 bg-white px-2">
-            <div className="container mx-auto px-4">
+            <div className="max-w-[1400px] mx-auto px-4">
                 <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
                     Popular Articles
                 </h2>
@@ -13,8 +13,8 @@ const Articles = () => {
             </div>
             <CategoryCard />
 
-            <div className="py-16 md:py-20 bg-[#5236CB] text-white  rounded-lg mx-auto container px-4 my-12 md:my-20 shadow-lg">
-                <div className="container mx-auto flex flex-col items-center  text-center">
+            <div className="py-16  max-w-[1400px]  md:py-20 bg-[#5236CB] text-white  rounded-lg mx-auto  px-4 my-12 md:my-20 shadow-lg">
+                <div className=" flex flex-col items-center  text-center">
                     <h2 className="text-3xl md:text-5xl font-bold mb-6 max">
                         Transform Your Business with DevDesk
                     </h2>

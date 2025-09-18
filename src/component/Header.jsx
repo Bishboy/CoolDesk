@@ -22,7 +22,7 @@ const Header = () => {
     return (
         <>
         <header className="relative py-8">
-                <div className="container mx-auto px-4">
+                <div className=" max-w-[1400px] mx-auto px-4">
                     <nav className="flex items-center justify-between flex-wrap">
                         <div className="flex items-center mr-3">
                             <Link to="/" className="flex items-center" >

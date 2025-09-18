@@ -15,26 +15,30 @@ const PopularCard = () => {
                 
                   <Card
                       key={article.id}
-                      className="bg-white border border-gray-200 rounded-xl p-6 flex flex-col items-start shadow-xl hover:shadow-2xl transition-all duration-200"
+                      className="bg-white border border-gray-200 rounded-xl py- p-8 flex flex-col items-start shadow-xl hover:shadow-2xl transition-all duration-200 group"
                   >
+                    <Link to={POPULAR_ARTICLES_URL}>
                     <CardHeader className="p-0 mb-4">
-                          <div className="p-2 bg-gray-100 rounded-md">
-                              <FileText className="h-6 w-6 text-gray-600" />
+                          <div className="p-2 bg-gray-50 w-fit rounded-md">
+                              <FileText className="h-5 w-5 text-gray-600" />
                           </div>
                       </CardHeader> 
+                      
                       <CardContent className="p-0 flex-grow">
-                          <Link to={POPULAR_ARTICLES_URL} className="text-lg font-semibold text-gray-800 mb-3 leading-tight">
+                          <div  className="text-base font-semibold group-hover:text-indigo-600 text-gray-800 mb-3 leading-tight">
                               {article.title}
-                          </Link>
+                          </div>
                       </CardContent>
-                      <CardFooter className="p-0 mt-auto">
+                      <CardFooter className="p-0 mt-6">
                           <div className="flex items-center text-sm text-gray-500">
-                              <ThumbsUp className="h-4 w-4 mr-1 text-gray-400" />
+                              <ThumbsUp className="h-4 w-4 mr-1 fill-gray-500" />
                               <span>
                                   {article.helpfulCount} people found this article helpful
                               </span>
                           </div>
                       </CardFooter>
+                    
+                    </Link>
                   </Card>
               ))}
           </div>

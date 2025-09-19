@@ -46,7 +46,7 @@ const Header = () => {
                         <div className="hidden lg:flex lg:items-center lg:justify-end w-full lg:w-auto">
                             <ul className="flex flex-col lg:flex-row items-center">
                                 <li className="mr-4 mb-3 lg:mb-0">
-                                    <a className="text-white font-semibold text-lg hover:text-gray-200">Home</a>
+                                    <Link to="/" className="text-white font-semibold text-lg hover:text-gray-200">Home</Link>
                                 </li>
                                 <li className="relative group mr-4 mb-3 lg:mb-0">
                                     {/* Desktop Dropdown */}
@@ -88,7 +88,7 @@ const Header = () => {
                         <div className="px-4 py-6 border-t border-white/20">
                             <ul className="flex flex-col space-y-4">
                                 <li className="">
-                                    <a className="text-white font-semibold text-lg hover:text-gray-200 block py-2">Home</a>
+                                    <Link to="/" className="text-white font-semibold text-lg hover:text-gray-200 block py-2">Home</Link>
                                 </li>
 
                                 <li className="relative group">

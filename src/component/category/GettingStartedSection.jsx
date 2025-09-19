@@ -6,12 +6,12 @@ import { Link } from 'react-router';
 
 const GettingStartedSection = () => {
     return (
-        <div className="max-w-3xl mx-auto  px-4">
+        <div className="max-w-3xl mx-auto mt-8 md:mt-0 px-4">
             {/* Heading */}
-            <h1 className="text-3xl font-bold text-gray-900 mb-4">Getting Started</h1>
+            <h1 className="text-3xl font-bold text-gray-900 text-center md:text-start mb-4">Getting Started</h1>
 
             {/* Description */}
-            <p className="text-lg text-gray-700 mb-8">
+            <p className="text-lg text-gray-700 mb-8 text-center md:text-start">
                 In this section, we'll guide you through the initial steps to set up your Momentum account.
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>

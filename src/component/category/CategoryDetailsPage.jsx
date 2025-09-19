@@ -28,7 +28,7 @@ const CategoryDetailsPage = () => {
                   </Breadcrumb>
               </div>
 
-              <div className='flex flex-col md:flex-row  md:mt-10 gap-[3rem] md:gap-6'>
+              <div className='flex flex-col-reverse md:flex-row  md:mt-10 gap-[3rem] md:gap-6'>
                   {/* Sticky sidebar */}
                   <div className='md:w-[20%]'>
                       <div className='sticky top-4 md:h-[calc(100vh-2rem)]  overflow-y-auto'>
